@@ -22,17 +22,18 @@ pool:
 steps:
 - task: GoTool@0
   inputs:
-    version: '1.10' 
+    version: '1.11.4' 
     goPath: $(system.defaultWorkingDirectory)/gopath
     goBin: $(system.defaultWorkingDirectory)/gobin
-    
+  displayName: Go install
+
 - task: Go@0
   inputs:
      command: 'get' # Options: get, build, test, custom
      #customCommand: # Required when command == Custom
      arguments: ./...
      workingDirectory:
-  name: Go install dependencies
+  displayName: Install dependencies
 
 - task: Go@0
   inputs:
@@ -40,4 +41,4 @@ steps:
      #customCommand: # Required when command == Custom
      arguments: -v .
      workingDirectory:
-  name: Tests
+  displayName: Run Tests
