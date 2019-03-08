@@ -11,7 +11,7 @@ strategy:
     windows:
       imageName: 'windows-2019'
 pool:
-  vmImage: 'Ubuntu 16.04'
+  vmImage: $(imageName)
 
 variables:
   GOBIN:  '$(GOPATH)/bin' # Go binaries path
