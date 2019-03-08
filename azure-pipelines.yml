@@ -32,7 +32,7 @@ steps:
      #customCommand: # Required when command == Custom
      arguments: ./...
      workingDirectory:
-  name: Goinstall
+  name: Go install dependencies
 
 - task: Go@0
   inputs:
