@@ -23,8 +23,8 @@ steps:
 - task: GoTool@0
   inputs:
     version: '1.10' 
-    #goPath: # Optional
-    #goBin: # Optional
+    goPath: $(system.defaultWorkingDirectory)/gopath
+    goBin: $(system.defaultWorkingDirectory)/gobin
     
 - task: Go@0
   inputs:
