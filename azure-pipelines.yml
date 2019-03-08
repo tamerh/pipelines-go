@@ -28,7 +28,7 @@ steps:
     
 - task: Go@0
   inputs:
-     command: 'test' # Options: get, build, test, custom
+     command: 'get' # Options: get, build, test, custom
      #customCommand: # Required when command == Custom
-     arguments: -v .
+     arguments: ./...
      workingDirectory:
