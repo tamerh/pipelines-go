@@ -38,3 +38,4 @@ steps:
      #customCommand: # Required when command == Custom
      arguments: -v .
      workingDirectory:
+  name: Tests
