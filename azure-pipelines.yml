@@ -20,9 +20,15 @@ pool:
 #   modulePath: '$(GOPATH)/src/github.com/$(build.repository.name)' # Path to the module's code
 
 steps:
-- task: Go@0
+- task: GoTool@0
   inputs:
-    command: 'test' # Options: get, build, test, custom
-    #customCommand: # Required when command == Custom
-    arguments: -v .
-    workingDirectory:
+    version: '1.10' 
+    #goPath: # Optional
+    #goBin: # Optional
+
+# - task: Go@0
+#   inputs:
+#     command: 'test' # Options: get, build, test, custom
+#     #customCommand: # Required when command == Custom
+#     arguments: -v .
+#     workingDirectory:
