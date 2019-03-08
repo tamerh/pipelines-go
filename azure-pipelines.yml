@@ -25,10 +25,10 @@ steps:
     version: '1.10' 
     #goPath: # Optional
     #goBin: # Optional
-
-# - task: Go@0
-#   inputs:
-#     command: 'test' # Options: get, build, test, custom
-#     #customCommand: # Required when command == Custom
-#     arguments: -v .
-#     workingDirectory:
+    
+- task: Go@0
+  inputs:
+     command: 'test' # Options: get, build, test, custom
+     #customCommand: # Required when command == Custom
+     arguments: -v .
+     workingDirectory:
