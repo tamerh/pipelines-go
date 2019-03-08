@@ -32,3 +32,9 @@ steps:
      #customCommand: # Required when command == Custom
      arguments: ./...
      workingDirectory:
+- task: Go@0
+  inputs:
+     command: 'test' # Options: get, build, test, custom
+     #customCommand: # Required when command == Custom
+     arguments: -v .
+     workingDirectory:
