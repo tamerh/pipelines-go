@@ -32,6 +32,8 @@ steps:
      #customCommand: # Required when command == Custom
      arguments: ./...
      workingDirectory:
+  name: Goinstall
+
 - task: Go@0
   inputs:
      command: 'test' # Options: get, build, test, custom
